@@ -1,1 +1,1038 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variación de precios en certificados de tradición y libertad en Colombia | Guía informativa</title>
+    <meta name="description" content="Análisis informativo sobre la fluctuación y cambio de precios de los certificados de tradición y libertad en Colombia. Factores, contexto y datos de interés general.">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --khaki: #c3b091;
+            --khaki-light: #d9cdb8;
+            --khaki-lighter: #ece4d8;
+            --khaki-dark: #a89878;
+            --cream: #faf7f2;
+            --ink: #2c2a26;
+            --ink-soft: #55514a;
+            --accent: #6f8163;
+            --accent-soft: #a3b39a;
+            --accent-deep: #4f5e46;
+            --white: #ffffff;
+            --line: rgba(168, 152, 120, 0.3);
+            --shadow-sm: 0 4px 16px rgba(44, 42, 38, 0.05);
+            --shadow-md: 0 10px 30px rgba(44, 42, 38, 0.08);
+            --shadow-lg: 0 20px 50px rgba(44, 42, 38, 0.12);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--khaki);
+            color: var(--ink);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            font-size: 16px;
+        }
+        .wrapper { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+        .wrapper-narrow { max-width: 820px; margin: 0 auto; padding: 0 28px; }
 
+        header {
+            background: linear-gradient(150deg, var(--khaki-lighter) 0%, var(--cream) 55%, var(--khaki-light) 100%);
+            border-bottom: 1px solid var(--khaki-dark);
+            padding: 90px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: -120px; right: -80px;
+            width: 340px; height: 340px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            opacity: 0.2;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -140px; left: -60px;
+            width: 280px; height: 280px;
+            border-radius: 50%;
+            background: var(--khaki-dark);
+            opacity: 0.18;
+        }
+        .header-inner {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            padding: 9px 20px;
+            border-radius: 40px;
+            margin-bottom: 28px;
+        }
+        .badge::before {
+            content: '';
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--khaki-lighter);
+        }
+        h1 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--ink);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+        h1 em {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--accent-deep);
+        }
+        .subtitle {
+            font-size: 1.08rem;
+            font-weight: 300;
+            color: var(--ink-soft);
+            max-width: 540px;
+        }
+        .hero-illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-illustration svg {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            filter: drop-shadow(0 20px 40px rgba(44, 42, 38, 0.15));
+        }
+
+        .notice {
+            background: var(--white);
+            border-left: 4px solid var(--accent);
+            padding: 22px 30px;
+            margin-top: 50px;
+            border-radius: 8px;
+            font-size: 0.93rem;
+            color: var(--ink-soft);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            position: relative;
+            z-index: 2;
+        }
+        .notice svg {
+            flex-shrink: 0;
+            width: 24px; height: 24px;
+            color: var(--accent);
+        }
+        .notice strong { color: var(--ink); font-weight: 600; }
+
+        section { padding: 84px 0; }
+        .section-alt { background: var(--khaki-lighter); }
+        .section-header { margin-bottom: 56px; max-width: 720px; }
+        .kicker {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent-deep);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-soft);
+        }
+        .section-title {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: var(--ink);
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+        .section-title em {
+            font-style: italic;
+            font-weight: 300;
+            color: var(--accent-deep);
+        }
+        .section-lead {
+            font-size: 1.02rem;
+            color: var(--ink-soft);
+            font-weight: 300;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .stat {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 30px 26px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--line);
+        }
+        .stat-number {
+            font-family: 'Fraunces', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--ink-soft);
+            font-weight: 400;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 26px;
+        }
+        .card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 36px 32px;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s ease;
+            border: 1px solid var(--line);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: var(--accent-soft);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.35s ease;
+        }
+        .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+        .card:hover::before { transform: scaleX(1); }
+        .card-icon {
+            width: 54px; height: 54px;
+            border-radius: 14px;
+            background: var(--khaki-lighter);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 22px;
+            color: var(--accent-deep);
+        }
+        .card-icon svg { width: 26px; height: 26px; }
+        .card h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--ink);
+        }
+        .card p {
+            font-size: 0.93rem;
+            color: var(--ink-soft);
+            font-weight: 300;
+        }
+
+        .steps { display: grid; gap: 24px; }
+        .step {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 28px;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 34px 36px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--line);
+            align-items: flex-start;
+            transition: transform 0.3s ease;
+        }
+        .step:hover { transform: translateX(6px); }
+        .step-visual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .step-number {
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 6px 16px rgba(111, 129, 99, 0.35);
+        }
+        .step-icon {
+            width: 42px; height: 42px;
+            color: var(--accent-deep);
+            opacity: 0.7;
+        }
+        .step-content h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--ink);
+        }
+        .step-content p {
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+            font-weight: 300;
+            margin-bottom: 14px;
+        }
+        .step-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--khaki-lighter);
+            color: var(--accent-deep);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            letter-spacing: 0.02em;
+        }
+        .tag svg { width: 13px; height: 13px; }
+
+        .table-wrap {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--line);
+            margin-top: 24px;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+        thead { background: var(--accent-deep); color: var(--white); }
+        th {
+            padding: 18px 24px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 0.82rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        td {
+            padding: 18px 24px;
+            border-bottom: 1px solid var(--line);
+            color: var(--ink-soft);
+            font-weight: 300;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:hover { background: var(--khaki-lighter); }
+        td strong { color: var(--ink); font-weight: 500; }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 14px;
+            margin-bottom: 14px;
+            border: 1px solid var(--line);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+        .faq-item[open] { box-shadow: var(--shadow-sm); }
+        .faq-item summary {
+            padding: 24px 30px;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--ink);
+            font-family: 'Fraunces', serif;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--accent);
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p {
+            padding: 0 30px 26px;
+            font-size: 0.94rem;
+            color: var(--ink-soft);
+            font-weight: 300;
+        }
+
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            margin-top: 40px;
+        }
+        .tip {
+            background: var(--white);
+            border-radius: 14px;
+            padding: 30px 26px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--line);
+        }
+        .tip-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.78rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 14px;
+            letter-spacing: 0.08em;
+        }
+        .tip h4 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--ink);
+        }
+        .tip p {
+            font-size: 0.9rem;
+            color: var(--ink-soft);
+            font-weight: 300;
+        }
+
+        footer {
+            background: var(--ink);
+            color: var(--khaki-lighter);
+            padding: 70px 0 50px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        .footer-brand h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 14px;
+        }
+        .footer-brand p {
+            font-size: 0.88rem;
+            opacity: 0.75;
+            font-weight: 300;
+            max-width: 340px;
+        }
+        .footer-col h4 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-soft);
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col li {
+            font-size: 0.88rem;
+            opacity: 0.7;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(236, 228, 216, 0.15);
+            padding-top: 30px;
+            text-align: center;
+        }
+        .footer-bottom p {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 8px;
+        }
+
+        /* ============ COOKIE MODAL ============ */
+        .cookie-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(44, 42, 38, 0.85);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            padding: 20px;
+            animation: fadeIn 0.4s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .cookie-modal {
+            background: var(--cream);
+            border-radius: 20px;
+            padding: 40px 36px;
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--khaki-dark);
+            animation: slideUp 0.5s ease-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .cookie-modal h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 20px;
+        }
+        .cookie-modal .cookie-img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            margin: 0 auto 22px;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(44, 42, 38, 0.15);
+        }
+        .cookie-modal .cookie-text {
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+            font-weight: 300;
+            line-height: 1.7;
+            margin-bottom: 26px;
+            text-align: left;
+        }
+        .cookie-btn {
+            background: var(--accent-deep);
+            color: var(--white);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease, transform 0.2s ease;
+            letter-spacing: 0.04em;
+        }
+        .cookie-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 900px) {
+            .header-inner { grid-template-columns: 1fr; gap: 40px; }
+            .hero-illustration { order: -1; }
+            .hero-illustration svg { max-width: 280px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            header { padding: 60px 0 50px; }
+            .wrapper, .wrapper-narrow { padding: 0 20px; }
+            section { padding: 56px 0; }
+            .step { grid-template-columns: 1fr; gap: 18px; padding: 28px 24px; }
+            .step-visual { flex-direction: row; align-items: center; }
+            th, td { padding: 14px 16px; font-size: 0.85rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 34px; }
+            .notice { flex-direction: column; gap: 12px; }
+            .cookie-modal { padding: 30px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header>
+        <div class="wrapper">
+            <div class="header-inner">
+                <div>
+                    <span class="badge">Análisis informativo</span>
+                    <h1>Variación de precios en <em>certificados de tradición y libertad</em> en Colombia</h1>
+                    <p class="subtitle">Un recorrido informativo por los factores que han incidido en el cambio de tarifas de este documento clave para el sector inmobiliario y jurídico del país.</p>
+                </div>
+                <div class="hero-illustration">
+                    <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="60" y="20" width="180" height="300" rx="14" fill="#2c2a26" opacity="0.9"/>
+                        <rect x="70" y="30" width="160" height="280" rx="10" fill="#faf7f2"/>
+                        <rect x="95" y="55" width="110" height="10" rx="5" fill="#6f8163"/>
+                        <rect x="95" y="80" width="80" height="6" rx="3" fill="#c3b091"/>
+                        <rect x="95" y="100" width="110" height="6" rx="3" fill="#d9cdb8"/>
+                        <rect x="95" y="118" width="95" height="6" rx="3" fill="#d9cdb8"/>
+                        <rect x="95" y="136" width="105" height="6" rx="3" fill="#d9cdb8"/>
+                        <rect x="95" y="165" width="110" height="40" rx="6" fill="#ece4d8"/>
+                        <text x="110" y="190" font-family="Inter, sans-serif" font-size="13" fill="#4f5e46" font-weight="700">$ 18.500</text>
+                        <rect x="95" y="220" width="110" height="40" rx="6" fill="#a3b39a" opacity="0.4"/>
+                        <text x="110" y="245" font-family="Inter, sans-serif" font-size="13" fill="#4f5e46" font-weight="700">$ 21.300</text>
+                        <path d="M95 285 L145 270 L205 250" stroke="#6f8163" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <circle cx="205" cy="250" r="5" fill="#6f8163"/>
+                        <circle cx="240" cy="90" r="22" fill="#6f8163" opacity="0.9"/>
+                        <text x="233" y="97" font-family="Inter, sans-serif" font-size="18" fill="#ffffff" font-weight="700">$</text>
+                        <circle cx="255" cy="150" r="16" fill="#a3b39a" opacity="0.8"/>
+                        <text x="250" y="156" font-family="Inter, sans-serif" font-size="13" fill="#ffffff" font-weight="700">$</text>
+                        <circle cx="45" cy="180" r="18" fill="#a89878" opacity="0.7"/>
+                        <text x="39" y="187" font-family="Inter, sans-serif" font-size="15" fill="#ffffff" font-weight="700">$</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="notice">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <div>
+                    <strong>Aviso importante:</strong> Esta página es exclusivamente informativa y educativa. No ofrecemos servicios notariales, registrales ni financieros, y no estamos afiliados a ninguna entidad pública o privada. Toda la información es de carácter general y puede variar según las políticas oficiales vigentes.
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ QUÉ ES ============ -->
+    <section>
+        <div class="wrapper">
+            <div class="section-header">
+                <span class="kicker">01 — Contexto</span>
+                <h2 class="section-title">¿Qué es un <em>certificado de tradición y libertad</em>?</h2>
+                <p class="section-lead">Es un documento oficial que resume la situación jurídica de un inmueble en Colombia. En él se registran los propietarios, las limitaciones, las gravámenes y la historia registral del bien. Es indispensable para compraventas, hipotecas, sucesiones y trámites notariales.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <h3>Documento oficial</h3>
+                    <p>Es expedido por la Oficina de Registro de Instrumentos Públicos correspondiente al municipio donde se ubica el inmueble. Tiene validez jurídica y es exigido en múltiples trámites.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Vigencia limitada</h3>
+                    <p>La información contenida refleja la situación del inmueble al momento de la expedición. Por eso se recomienda solicitarlo nuevamente antes de cerrar cualquier negocio jurídico.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Costo variable</h3>
+                    <p>El precio de expedición ha cambiado con el tiempo y depende de factores como la normativa vigente, la entidad que lo expide y el tipo de solicitud realizada.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Cobertura nacional</h3>
+                    <p>Cada municipio o distrito cuenta con su propia oficina de registro. El documento se solicita según la ubicación del inmueble, no según la residencia del solicitante.</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Documento oficial</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">+1.100</div>
+                    <div class="stat-label">Oficinas de registro en el país</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Consulta virtual disponible</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Variable</div>
+                    <div class="stat-label">Tarifa según normativa</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FACTORES ============ -->
+    <section class="section-alt">
+        <div class="wrapper">
+            <div class="section-header">
+                <span class="kicker">02 — Factores</span>
+                <h2 class="section-title">¿Por qué ha <em>fluctuado</em> el precio?</h2>
+                <p class="section-lead">El cambio de tarifas de los certificados de tradición y libertad no responde a un solo motivo. Intervienen factores normativos, administrativos, tecnológicos y económicos que han incidido en su valor a lo largo del tiempo.</p>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">1</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>Actualizaciones normativas</h3>
+                        <p>Las resoluciones y decretos que regulan las tarifas de las oficinas de registro han sido actualizados en distintos momentos. Cada ajuste normativo puede traducirse en un cambio en el valor del certificado.</p>
+                        <div class="step-meta">
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Cambios periódicos
+                            </span>
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Normativa nacional
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">2</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>Modernización tecnológica</h3>
+                        <p>La implementación de plataformas virtuales, firma electrónica y sistemas de consulta en línea ha transformado la forma de expedir el documento, con impactos en costos operativos y tarifas al usuario.</p>
+                        <div class="step-meta">
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                Digitalización
+                            </span>
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Consulta en línea
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">3</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>Costos operativos y administrativos</h3>
+                        <p>El mantenimiento de archivos físicos, la digitalización de tomos, la actualización de sistemas y el personal capacitado representan costos que inciden en la tarifa final del servicio.</p>
+                        <div class="step-meta">
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Variable
+                            </span>
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                Sujeta a revisión
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">4</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>Demanda del sector inmobiliario</h3>
+                        <p>En periodos de alta actividad inmobiliaria, la solicitud de certificados aumenta considerablemente. Esa mayor demanda también puede influir en los tiempos de expedición y en los costos asociados.</p>
+                        <div class="step-meta">
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                Alta demanda
+                            </span>
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Tiempos variables
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">5</div>
+                        <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <h3>Diferencias regionales</h3>
+                        <p>No todas las oficinas de registro aplican exactamente las mismas tarifas. Existen particularidades por municipio o distrito que pueden generar variaciones en el valor final del certificado.</p>
+                        <div class="step-meta">
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Por municipio
+                            </span>
+                            <span class="tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                Consultar fuente oficial
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ COMPARATIVA ============ -->
+    <section>
+        <div class="wrapper">
+            <div class="section-header">
+                <span class="kicker">03 — Comparativa</span>
+                <h2 class="section-title">Evolución <em>orientativa</em> de tarifas</h2>
+                <p class="section-lead">Esta tabla resume de forma orientativa cómo han cambiado las tarifas del certificado en distintos periodos. Los valores son ilustrativos y pueden no coincidir con las tarifas vigentes oficiales.</p>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Periodo</th>
+                            <th>Tarifa orientativa</th>
+                            <th>Modalidad</th>
+                            <th>Tiempo de expedición</th>
+                            <th>Observación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Periodo anterior</strong></td>
+                            <td>$ 12.000 - $ 15.000</td>
+                            <td>Presencial</td>
+                            <td>1 a 3 días hábiles</td>
+                            <td>Trámite físico en oficina</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Periodo intermedio</strong></td>
+                            <td>$ 15.500 - $ 18.500</td>
+                            <td>Mixta</td>
+                            <td>Horas a 2 días</td>
+                            <td>Inicio de digitalización</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Periodo reciente</strong></td>
+                            <td>$ 18.500 - $ 21.300</td>
+                            <td>Virtual</td>
+                            <td>Minutos a horas</td>
+                            <td>Consulta en línea masiva</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Periodo actual</strong></td>
+                            <td>Variable</td>
+                            <td>Virtual / Presencial</td>
+                            <td>Inmediato a 1 día</td>
+                            <td>Consultar tarifa vigente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TIPS ============ -->
+    <section class="section-alt">
+        <div class="wrapper">
+            <div class="section-header">
+                <span class="kicker">04 — Buenas prácticas</span>
+                <h2 class="section-title">Consejos útiles al <em>solicitar</em> el certificado</h2>
+                <p class="section-lead">Estas recomendaciones te ayudarán a realizar el trámite de forma más ágil y segura, sin contratiempos innecesarios.</p>
+            </div>
+
+            <div class="tips">
+                <div class="tip">
+                    <div class="tip-number">01 / VERIFICA</div>
+                    <h4>Consulta la tarifa vigente</h4>
+                    <p>Antes de solicitar el certificado, verifica la tarifa actual en los canales oficiales de la entidad correspondiente.</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-number">02 / DATOS</div>
+                    <h4>Ten a mano los datos del inmueble</h4>
+                    <p>Número de matrícula inmobiliaria, dirección y municipio son datos indispensables para agilizar la solicitud.</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-number">03 / CANAL</div>
+                    <h4>Prefiere canales oficiales</h4>
+                    <p>Realiza el trámite directamente en la oficina de registro o en la plataforma oficial correspondiente.</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-number">04 / COMPROBANTE</div>
+                    <h4>Guarda el comprobante</h4>
+                    <p>Conserva el soporte de pago y el certificado emitido. Son tu respaldo ante cualquier eventualidad.</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-number">05 / VIGENCIA</div>
+                    <h4>Revisa la fecha de expedición</h4>
+                    <p>Verifica que el certificado sea reciente. Para trámites notariales suele exigirse expedido con pocos días de antelación.</p>
+                </div>
+                <div class="tip">
+                    <div class="tip-number">06 / ASESORÍA</div>
+                    <h4>Consulta a un profesional</h4>
+                    <p>Para operaciones complejas, apóyate en un abogado o notario que te oriente sobre el uso del documento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section>
+        <div class="wrapper-narrow">
+            <div class="section-header">
+                <span class="kicker">05 — Preguntas frecuentes</span>
+                <h2 class="section-title">Dudas <em>habituales</em></h2>
+                <p class="section-lead">Resolvemos algunas de las preguntas más frecuentes sobre los certificados de tradición y libertad y su variación de precios.</p>
+            </div>
+
+            <details class="faq-item" open>
+                <summary>¿Por qué cambia el precio del certificado?</summary>
+                <p>El precio puede cambiar por actualizaciones normativas, ajustes administrativos, modernización tecnológica, costos operativos y diferencias regionales entre oficinas de registro.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Dónde consulto la tarifa oficial vigente?</summary>
+                <p>La tarifa oficial debe consultarse directamente en los canales de la entidad que expide el certificado. Esta página es informativa y no publica tarifas oficiales.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿El certificado tiene vigencia?</summary>
+                <p>El certificado refleja la situación del inmueble al momento de su expedición. Para trámites notariales suele exigirse que sea reciente, por lo que se recomienda solicitarlo nuevamente antes de cerrar cualquier negocio.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Puedo solicitarlo en línea?</summary>
+                <p>Sí, en la mayoría de los casos existe la posibilidad de solicitarlo a través de plataformas virtuales oficiales. La disponibilidad depende de la oficina de registro correspondiente.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Qué datos necesito para solicitarlo?</summary>
+                <p>Generalmente se requiere el número de matrícula inmobiliaria, la dirección del inmueble y el municipio donde se ubica. Algunos canales solicitan además datos del solicitante.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Esta página ofrece el servicio de certificados?</summary>
+                <p>No. Esta página es exclusivamente informativa y educativa. No ofrecemos servicios notariales, registrales ni financieros, y no estamos afiliados a ninguna entidad pública o privada.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Guía informativa</h3>
+                    <p>Un recurso educativo creado para explicar de forma clara la variación de precios de los certificados de tradición y libertad en Colombia, sin ofrecer servicios registrales ni estar afiliados a ninguna entidad.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contenido</h4>
+                    <ul>
+                        <li>Qué es el certificado</li>
+                        <li>Factores de variación</li>
+                        <li>Comparativa orientativa</li>
+                        <li>Consejos útiles</li>
+                        <li>Preguntas frecuentes</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Aviso legal</h4>
+                    <ul>
+                        <li>Página informativa</li>
+                        <li>Sin servicios registrales</li>
+                        <li>Sin afiliación oficial</li>
+                        <li>Información general</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Esta página tiene fines exclusivamente informativos y educativos. No somos una entidad registral, notarial ni financiera, no ofrecemos servicios de certificados y no estamos afiliados a ninguna entidad pública o privada.</p>
+                <p>Toda la información aquí presentada es de carácter general y puede estar sujeta a cambios según las políticas oficiales de cada entidad. Consulta siempre las fuentes oficiales.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ COOKIE MODAL ============ -->
+    <div class="cookie-overlay" id="cookieOverlay">
+        <div class="cookie-modal">
+            <h2>Política de cookies</h2>
+            <img src="certifi.jpg" alt="Certificado" class="cookie-img">
+            <p class="cookie-text">
+                Utilizamos cookies para garantizar el correcto funcionamiento de este sitio informativo y mejorar tu experiencia de navegación. Al continuar, aceptas nuestra política de tratamiento de datos conforme a la normativa vigente en Colombia.
+            </p>
+            <button class="cookie-btn" id="acceptCookiesBtn">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var cookieOverlay = document.getElementById('cookieOverlay');
+            cookieOverlay.style.display = 'flex';
+
+            document.getElementById('acceptCookiesBtn').addEventListener('click', function() {
+                cookieOverlay.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
